@@ -1,13 +1,13 @@
 import './globals.css'
 
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Questrial } from 'next/font/google'
 
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { cn } from '@/lib/utils'
 
-const inter = Inter({ subsets: ['latin'] })
+const questrial = Questrial({ subsets: ['latin'], weight: ['400'] })
 
 export const metadata: Metadata = {
     title: 'Gabriel Schmidt Cordeiro | Dev',
@@ -22,8 +22,8 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={cn(
-                inter.className,
-                'bg-zinc-900'
+                questrial.className,
+                'bg-zinc-900 text-neutral-200'
             )}>
                 <Header />
                 {children}

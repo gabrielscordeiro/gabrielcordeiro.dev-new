@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+.container {
+    max-width: 1268px;
+    margin-left: auto;
+    margin-right: auto;
+}
