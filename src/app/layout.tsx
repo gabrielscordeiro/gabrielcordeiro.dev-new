@@ -23,7 +23,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={cn(
                 questrial.className,
-                'bg-zinc-900 text-neutral-200'
+                'bg-zinc-950 text-neutral-200'
             )}>
                 <Header />
                 {children}
