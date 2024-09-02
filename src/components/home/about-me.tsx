@@ -36,13 +36,13 @@ export function AboutMe() {
                         <div className="mb-4 flex gap-8">
                             <div className="flex max-w-52 items-center font-bold">
                                 <div className="mr-4 flex items-center text-7xl tracking-[-0.15em]">
-                                    <CountUp delay={2} end={10} duration={3} />
+                                    <CountUp end={10} duration={3} />
                                 </div>
                                 <div className="text-base font-normal leading-none text-neutral-100">Years of experience</div>
                             </div>
                             <div className="flex max-w-56 items-center font-bold">
                                 <div className="mr-4 flex items-center text-7xl">
-                                    <CountUp delay={2} end={40} duration={8} />
+                                    <CountUp end={40} duration={8} />
                                 </div>
                                 <div className="text-base font-normal leading-none text-neutral-100">Successful projects</div>
                             </div>
