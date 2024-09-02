@@ -1,5 +1,7 @@
+'use client'
 
 import Link from 'next/link'
+import CountUp from 'react-countup'
 import { FaArrowRight } from 'react-icons/fa'
 
 import { H2Title } from '@/components/texts/h2-title'
@@ -34,13 +36,13 @@ export function AboutMe() {
                         <div className="mb-4 flex gap-8">
                             <div className="flex max-w-52 items-center font-bold">
                                 <div className="mr-4 flex items-center text-7xl tracking-[-0.15em]">
-                                    10
+                                    <CountUp delay={2} end={10} duration={3} />
                                 </div>
                                 <div className="text-base font-normal leading-none text-neutral-100">Years of experience</div>
                             </div>
                             <div className="flex max-w-56 items-center font-bold">
                                 <div className="mr-4 flex items-center text-7xl">
-                                    40
+                                    <CountUp delay={2} end={40} duration={8} />
                                 </div>
                                 <div className="text-base font-normal leading-none text-neutral-100">Successful projects</div>
                             </div>

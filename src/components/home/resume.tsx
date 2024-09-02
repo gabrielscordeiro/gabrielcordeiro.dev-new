@@ -1,4 +1,6 @@
+'use client'
 import Image from 'next/image'
+import CountUp from 'react-countup'
 
 import { Paragraph } from '@/components/texts/paragraph'
 
@@ -21,13 +23,13 @@ export function Resume() {
                     <div className="flex gap-8">
                         <div className="flex max-w-56 items-center font-bold">
                             <div className="mr-4 flex items-center text-7xl">
-                                10<span className="pl-1 text-5xl text-blue-700">+</span>
+                                <CountUp end={10} duration={3} /><span className="pl-1 text-5xl text-blue-700">+</span>
                             </div>
                             <div className="text-lg leading-none text-neutral-100">Years of experience</div>
                         </div>
                         <div className="flex max-w-56 items-center font-bold">
                             <div className="mr-4 flex items-center text-7xl">
-                                40<span className="pl-1 text-5xl text-blue-700">+</span>
+                                <CountUp end={40} duration={8} /><span className="pl-1 text-5xl text-blue-700">+</span>
                             </div>
                             <div className="text-lg leading-none text-neutral-100">Successful projects</div>
                         </div>
