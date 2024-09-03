@@ -10,8 +10,8 @@ import { Paragraph } from '@/components/texts/paragraph'
 
 export function AboutMe() {
     return (
-        <div className="bg-zinc-900 py-40">
-            <div className="about-me container grid grid-cols-2 gap-32">
+        <div className="about-me bg-zinc-900 py-40">
+            <div className="container grid grid-cols-2 gap-32">
                 <div>
 
                     <H2Title>About Me</H2Title>
