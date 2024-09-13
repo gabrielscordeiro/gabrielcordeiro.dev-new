@@ -30,8 +30,8 @@ export function SkillItem({
     return (
         <div ref={ref} className="flex flex-col">
             <span className="mb-1 text-xl font-semibold text-neutral-100">{title}</span>
-            <div className="h-3 w-full bg-neutral-800">
-                <div className={`h-full bg-blue-700 transition-all duration-1000 ease-in-out`} style={{ width: `${width}%`}}></div>
+            <div className="h-3 w-full rounded-md bg-neutral-800">
+                <div className={`h-full rounded-md bg-blue-700 transition-all duration-1000 ease-in-out`} style={{ width: `${width}%`}}></div>
             </div>
         </div>
     )
