@@ -13,7 +13,7 @@ export function Skills() {
                     <SkillItem title="React" percent={100}  />
                     <SkillItem title="Typescript" percent={90}  />
                     <SkillItem title="Javascript" percent={100}  />
-                    <SkillItem title="Next" percent={70}  />
+                    <SkillItem title="NextJS" percent={70}  />
                     <SkillItem title="Tailwind" percent={80}  />
                 </div>
 
