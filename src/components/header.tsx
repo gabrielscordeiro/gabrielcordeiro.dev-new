@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { menu } from '@/data/menu'
+
 export function Header() {
     return (
         <header>
@@ -16,26 +18,13 @@ export function Header() {
 
 
                 <ul className="group flex justify-between gap-8 text-neutral-200">
-                    <li>
-                        <Link href="#" className="text-md">
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="#" className="text-md">
-                            About
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="#" className="text-md">
-                            Portfolio
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="#" className="text-md">
-                            Blog
-                        </Link>
-                    </li>
+                    {menu.map((item) => (
+                        <li key={item.link}>
+                            <Link href={item.link} className="text-md">
+                                {item.name}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </header>

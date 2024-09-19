@@ -41,6 +41,7 @@ export function Resume() {
                         alt="Gabriel Schmidt Cordeiro"
                         width={450}
                         height={450}
+                        className="brightness-125"
                     />
                 </div>
             </div>
