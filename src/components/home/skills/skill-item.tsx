@@ -1,37 +1,28 @@
-'use client'
-
-import { useEffect, useState } from 'react'
-
-import useInView from '@/lib/useInView'
+import { IconType } from 'react-icons'
 
 interface SkillItemProps {
+    Icon: IconType,
+    color: string,
     title: string;
-    percent: number;
+    subTitle: string;
 }
 
 export function SkillItem({
+    Icon,
+    color,
     title,
-    percent
+    subTitle,
 }: SkillItemProps) {
-    const [width, setWidth] = useState(0)
-
-    const [ref, isIntersecting] = useInView({
-        threshold: 0.3, // Executa a animação quando 30% da barra estiver visível
-    })
-
-    useEffect(() => {
-        if (isIntersecting) {
-            setTimeout(() => {
-                setWidth(percent) // animação só acontece quando visível
-            }, 500)
-        }
-    }, [isIntersecting, percent])
 
     return (
-        <div ref={ref} className="flex flex-col">
-            <span className="mb-1 text-xl font-semibold text-neutral-100">{title}</span>
-            <div className="h-3 w-full rounded-md bg-neutral-800">
-                <div className={`h-full rounded-md bg-blue-700 transition-all duration-1000 ease-in-out`} style={{ width: `${width}%`}}></div>
+        <div className="flex items-center gap-4">
+            <div className="flex size-16 items-center justify-center rounded-2xl" style={{ backgroundColor: color }}>
+                <Icon className="text-neutral-100" size={40} />
+            </div>
+
+            <div className="flex flex-col">
+                <span className="text-xl text-neutral-100">{title}</span>
+                <span className="text-neutral-400">{subTitle}</span>
             </div>
         </div>
     )
