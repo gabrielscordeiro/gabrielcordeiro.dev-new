@@ -42,7 +42,11 @@ export function PortfolioItem({
                 />
 
                 <h4 className="mt-5 text-3xl font-semibold leading-10">{title}</h4>
-
+                
+                <div className="hidden">
+                    {logo}
+                    {image}
+                </div>
             </div>
 
             <Image
