@@ -22,7 +22,7 @@ export function Portfolio() {
                             Browse all projects <FaArrowRight />
                         </Link>
 
-                        <div className="mt-20">
+                        <div className="mt-24">
                             <PortfolioItem title="Full Stack Airbnb Clone" image="" logo="" tags={['React', 'MongoDB', 'Prisma', 'NextJS', 'Next Auth']} />
                         </div>
                     </div>
