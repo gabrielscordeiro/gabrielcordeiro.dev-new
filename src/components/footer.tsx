@@ -67,8 +67,8 @@ export function Footer() {
                             <h5 className="font-semibold uppercase text-neutral-400">
                                 Email me:
                             </h5>
-                            <div>
 
+                            <div>
                                 <Link
                                     href="mailto:gabrielcordeiro.dev@gmail.com"
                                     target="_blank"

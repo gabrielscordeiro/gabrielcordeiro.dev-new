@@ -6,7 +6,7 @@ export function H3Title({ className, children }: {
 }) {
     return (
         <h3 className={cn(
-            'mb-4 text-4xl font-semibold leading-10 text-neutral-200',
+            'mb-4 text-5xl font-semibold leading-12 text-neutral-200',
             className
         )}>
             {children}
