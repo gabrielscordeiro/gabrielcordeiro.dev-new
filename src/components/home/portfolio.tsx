@@ -7,7 +7,7 @@ import { H3Title } from '@/components/texts/h3-title'
 
 export function Portfolio() {
     return (
-        <div className="my-portfolio bg-zinc-900 p-10 lg:px-0 lg:py-40">
+        <div className="my-portfolio bg-zinc-900 p-5 md:p-10 lg:px-0 lg:py-40">
             <div className="container">
                 <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-12">
                     <div>
@@ -23,12 +23,12 @@ export function Portfolio() {
                         </Link>
 
                         <div className="lg:mt-24">
-                            <PortfolioItem title="Full Stack Airbnb Clone" image="" logo="" tags={['React', 'MongoDB', 'Prisma', 'NextJS', 'Next Auth']} />
+                            <PortfolioItem title="Full Stack Airbnb Clone" image="" logo="" tags={['React', 'MongoDB', 'Prisma']} />
                         </div>
                     </div>
 
                     <div>
-                        <PortfolioItem title="Pizza Shop Delivery Dashboard" image="" logo="" tags={['React', 'NextJS', 'Next Auth', 'Tailwind CSS']} />
+                        <PortfolioItem title="Pizza Shop Delivery Dashboard" image="" logo="" tags={['React', 'NextJS', 'Tailwind CSS']} />
                         <PortfolioItem title="Dev Store e-commerce website" image="" logo="" tags={['Prisma', 'NextJS', 'Next Auth']} />
                     </div>
                 </div>

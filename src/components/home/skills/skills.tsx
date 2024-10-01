@@ -10,7 +10,7 @@ import { H3Title } from '@/components/texts/h3-title'
 
 export function Skills() {
     return (
-        <div className="my-skills container p-10 lg:px-0 lg:py-40">
+        <div className="my-skills container p-5 md:p-10 lg:px-0 lg:py-40">
             <H2Title>My Skills</H2Title>
             <H3Title>List of my best skills</H3Title>
 

@@ -26,13 +26,13 @@ export function PortfolioItem({
         )}>
             <div className="absolute right-8 top-8 flex justify-end gap-2">
                 {tags.map((tag) => (
-                    <div key={tag} className="rounded-xl bg-neutral-600 p-3 font-semibold text-neutral-200">
+                    <div key={tag} className="rounded-xl bg-neutral-600 p-2 text-xs font-semibold text-neutral-200 md:p-3 md:text-xs">
                         {tag}
                     </div>
                 ))}
             </div>
 
-            <div className="mt-10 max-w-[28rem] p-10 pb-0">
+            <div className="mt-10 max-w-[28rem] p-5 pb-0 md:p-10">
                 <Image
                     src="/assets/logo-example.png"
                     alt="Logo example"
@@ -41,7 +41,7 @@ export function PortfolioItem({
                     className="mt-10"
                 />
 
-                <h4 className="mt-5 text-3xl font-semibold leading-10">{title}</h4>
+                <h4 className="mt-5 text-xl font-semibold leading-10 md:text-3xl">{title}</h4>
                 
                 <div className="hidden">
                     {logo}

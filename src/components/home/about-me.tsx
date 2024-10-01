@@ -10,8 +10,8 @@ import { Paragraph } from '@/components/texts/paragraph'
 
 export function AboutMe() {
     return (
-        <div className="about-me bg-zinc-900 p-10 lg:py-40">
-            <div className="container grid grid-rows-2 gap-16 lg:grid-cols-2 lg:gap-32">
+        <div className="about-me bg-zinc-900 p-5 md:p-10 lg:py-40">
+            <div className="container grid grid-rows-2 gap-8 md:gap-16 lg:grid-cols-2 lg:gap-32">
                 <div>
                     <H2Title>About Me</H2Title>
                     <H3Title>I’ve been developing websites since 2012</H3Title>
@@ -34,22 +34,24 @@ export function AboutMe() {
 
                 <div className="flex items-center">
                     <div>
-                        <div className="mb-4 flex justify-around gap-8 lg:justify-normal">
-                            <div className="flex max-w-52 items-center  font-bold">
-                                <div className="mr-4 flex items-center text-7xl tracking-[-0.15em]">
+                        <div className="mb-4 flex  gap-8 md:flex-row md:items-start md:justify-around lg:justify-normal">
+                            <div className="flex max-w-52 items-center font-bold">
+                                <div className="mr-4 flex items-center text-6xl tracking-[-0.15em] md:text-7xl">
                                     <CountUp end={10} duration={3} />
                                 </div>
                                 <div className="text-base font-normal leading-none text-neutral-100">Years of experience</div>
                             </div>
                             <div className="flex max-w-56 items-center font-bold">
-                                <div className="mr-4 flex items-center text-7xl">
+                                <div className="mr-2 flex items-center text-6xl md:mr-4 md:text-7xl">
                                     <CountUp end={40} duration={8} />
                                 </div>
                                 <div className="text-base font-normal leading-none text-neutral-100">Successful projects</div>
                             </div>
                         </div>
 
-                        <Paragraph>
+                        <Paragraph
+                            className="text-left lg:text-center"
+                        >
                             I have worked on various types of projects, from admin panels, dashboards, landing pages, e-commerce website, design systems and management tools.
                         </Paragraph>
                     </div>

@@ -9,7 +9,7 @@ export function Paragraph({
 }) {
     return (
         <p className={cn(
-            'leading-6 text-neutral-400 lg:text-left text-center text-lg',
+            'leading-6 text-neutral-400 lg:text-left text-center md:text-lg text-sm',
             className
         )}>
             {children}

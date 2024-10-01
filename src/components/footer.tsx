@@ -16,10 +16,10 @@ export function Footer() {
             inter.className
         )}>
             <div className="container">
-                <div className="grid grid-rows-2 p-10 lg:grid-cols-2 lg:gap-16 lg:px-0 lg:py-28">
+                <div className="grid grid-rows-2 p-5 md:p-10 lg:grid-cols-2 lg:gap-16 lg:px-0 lg:py-28">
                     <div>
                         <div className="flex items-center gap-8">
-                            <div className="avatar overflow-hidden rounded-full">
+                            <div className="avatar w-1/3 overflow-hidden rounded-full">
                                 <Image
                                     src="/assets/avatar-mini.png"
                                     alt="Gabriel Schmidt Cordeiro"
@@ -29,8 +29,8 @@ export function Footer() {
                                 />
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-2xl font-semibold text-neutral-50 lg:text-3xl">Gabriel S. Cordeiro</span>
-                                <span className="text-lg text-neutral-500 lg:text-xl">Senior front-end developer</span>
+                                <span className="text-xl font-semibold text-neutral-50 md:text-2xl lg:text-3xl">Gabriel S. Cordeiro</span>
+                                <span className="text-sm text-neutral-500 md:text-lg lg:text-xl">Senior front-end developer</span>
                             </div>
                         </div>
 
