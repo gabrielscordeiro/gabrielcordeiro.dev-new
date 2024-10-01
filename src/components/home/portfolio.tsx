@@ -7,9 +7,9 @@ import { H3Title } from '@/components/texts/h3-title'
 
 export function Portfolio() {
     return (
-        <div className="my-portfolio bg-zinc-900 py-40">
+        <div className="my-portfolio bg-zinc-900 p-10 lg:px-0 lg:py-40">
             <div className="container">
-                <div className="grid grid-cols-2 gap-12">
+                <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-12">
                     <div>
                         <H2Title>My portfolio</H2Title>
                         <H3Title>Take a look at the latest projects I’ve done</H3Title>
@@ -22,7 +22,7 @@ export function Portfolio() {
                             Browse all projects <FaArrowRight />
                         </Link>
 
-                        <div className="mt-24">
+                        <div className="lg:mt-24">
                             <PortfolioItem title="Full Stack Airbnb Clone" image="" logo="" tags={['React', 'MongoDB', 'Prisma', 'NextJS', 'Next Auth']} />
                         </div>
                     </div>

@@ -16,7 +16,7 @@ export function Footer() {
             inter.className
         )}>
             <div className="container">
-                <div className="grid grid-cols-2 gap-16 py-28">
+                <div className="grid grid-rows-2 p-10 lg:grid-cols-2 lg:gap-16 lg:px-0 lg:py-28">
                     <div>
                         <div className="flex items-center gap-8">
                             <div className="avatar overflow-hidden rounded-full">
@@ -29,8 +29,8 @@ export function Footer() {
                                 />
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-3xl font-semibold text-neutral-50">Gabriel S. Cordeiro</span>
-                                <span className="text-xl text-neutral-500">Senior front-end developer</span>
+                                <span className="text-2xl font-semibold text-neutral-50 lg:text-3xl">Gabriel S. Cordeiro</span>
+                                <span className="text-lg text-neutral-500 lg:text-xl">Senior front-end developer</span>
                             </div>
                         </div>
 
@@ -58,7 +58,7 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="flex items-center gap-4 text-5xl font-semibold text-neutral-50">
+                        <h4 className="mt-10 flex items-center gap-4 text-3xl font-semibold text-neutral-50 lg:mt-0 lg:text-5xl">
                             Get in touch
                             <FaArrowRight className="text-blue-700"/>
                         </h4>
@@ -81,18 +81,18 @@ export function Footer() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-2 border-t border-t-neutral-500 py-8">
-                    <ul className="group flex gap-8 text-xl font-semibold text-neutral-200">
+                <div className="grid grid-rows-2 gap-2 border-t border-t-neutral-500 py-8 lg:grid-cols-2 lg:gap-0">
+                    <ul className="group flex items-center justify-center gap-8 text-xl font-semibold text-neutral-200 lg:items-start lg:justify-normal">
                         {menu.map((item) => (
                             <li key={item.link}>
-                                <Link href={item.link} className="text-md text-neutral-300 transition-colors hover:text-neutral-50">
+                                <Link href={item.link} className="lg:text-md text-lg text-neutral-300 transition-colors hover:text-neutral-50">
                                     {item.name}
                                 </Link>
                             </li>
                         ))}
                     </ul>
 
-                    <span className="text-right">
+                    <span className="text-center text-sm lg:text-right lg:text-lg">
                         Copyright &copy; Made with ❤️ by me
                     </span>
                 </div>
